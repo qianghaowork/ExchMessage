@@ -16,3 +16,10 @@ This message is sent from the exchange to the trader in response to an 'Order En
 Order Fill Message
 This message is sent from the exchange to the trader to indicate that part or all of an order has been filled
 
+////////////////////////////////////////////////
+The tricky part is multiple trader information in order fill message as belows. I only consider the first trader and therefore got the wrong answer for active trader. 
+
+==> repeating group
+firm_id(uint8_t)
+trader_tag(char[3])
+qty(uint32_t)
