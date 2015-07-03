@@ -23,3 +23,5 @@ The tricky part is multiple trader information in order fill message as belows. 
 firm_id(uint8_t)
 trader_tag(char[3])
 qty(uint32_t)
+
+It should include checking the validility of termination code. 
