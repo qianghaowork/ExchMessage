@@ -1,5 +1,7 @@
 # ExchMessage
-An implemtation of the simplified version of exchange message. It could be compiled under Linux and Windows. It parsed a binary file which records the order message between traders and Exchange. 
+The project is a C++ implementation of the simplified version of parsing exchange message. It could be compiled and executed under Linux and Windows. It reads from a binary file which contains the order messages between traders and Exchange, parse it into categories and calculate 
+
+1) 
 
 The member functions summarized some information about the trades, such as how many packets are there in the stream?
 How many message exist for message type? Who was the most active trader? (measured as the trader largest filled volume)
@@ -16,7 +18,6 @@ This message is sent from the exchange to the trader in response to an 'Order En
 Order Fill Message
 This message is sent from the exchange to the trader to indicate that part or all of an order has been filled
 
-////////////////////////////////////////////////
 The tricky part is multiple trader information in order fill message as belows. I only consider the first trader and therefore got the wrong answer for active trader. 
 
 ==> repeating group
